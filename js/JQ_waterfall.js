@@ -17,7 +17,7 @@ $(document).ready(function(){
 			process = parseInt(num/$imgs.length*100);
 			$(".processing").css("width",process+"%");
 			if(process>=100){
-				$(".processing").fadeOut();
+				$(".loading").fadeOut();
 			}
 		};
 	});
