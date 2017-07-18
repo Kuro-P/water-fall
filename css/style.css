@@ -1,0 +1,33 @@
+@charset "utf-8"
+*{
+	padding:0;
+	margin:0;
+}
+/*瀑布流实现思路，大盒子中的所有小盒子是依据父盒子进行定位的*/
+.main{
+	position:relative;
+	margin:0 auto;
+}
+/*用padding实现边界距离是因为用JS获取的height,width不包含margin*/
+/*技巧：只设置上边和左边*/
+.box{
+	padding:15px 0 0 15px; /*用来代替margin的*/
+	float:left;
+}
+.pic{
+	padding:10px;
+	border-radius:5px;
+	box-shadow:0 0 5px #ccc;
+}
+.pic img{
+	width:165px;
+	height:auto;
+}
+.loading{
+	width:0%;
+	height:5px;
+	position:fixed;
+	top:0;
+	box-shadow:0px 2px 3px rgba(0,0,0,.2);
+	background-color: #f93;
+}
