@@ -53,7 +53,7 @@ function waterfall(){
 	var cols = Math.floor($(window).width()/boxsW);
 	$("#main").width(boxsW*cols).css("margin","0 auto");
 
-	this.newname = "wh";
+	//this.newname = "wh";
 	$boxs.each(function(index,item){
 		if(index<cols){
 			hArry[index]=$(item).outerHeight();
