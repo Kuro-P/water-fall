@@ -15,9 +15,9 @@ $(document).ready(function(){
 		image.onload = function(){
 			num++;
 			process = parseInt(num/$imgs.length*100);
-			$(".loading").css("width",process+"%");
+			$(".processing").css("width",process+"%");
 			if(process>=100){
-				$(".loading").fadeOut();
+				$(".processing").fadeOut();
 			}
 		};
 	});
