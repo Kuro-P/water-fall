@@ -1,10 +1,25 @@
 var hArry = [];
 var boxs = null;
 var boxssParent = document.getElementById("main");
+document.onreadystatechange = function(){
+	var imgs = document.getElementsByTagName("img");
+	var num=0;
+	for(var i=0;i<imgs.length;i++){
+		var oImg = new Image();
+		oImg.src = imgs[i].src;
+		oImg.onload = function(){
+			num++;
+			var processing=getByClass("processing")[0];
+			processing.style.width = parseInt(num/imgs.length*100) + "%";
+		};
+	}
+	if(document.readyState == "complete"){
+		var mask = getByClass("loading")[0];
+		mask.style.display = "none";
+	}
+};
 
-window.onload = function(){
-
-	
+window.onload = function(){	
 	waterfall("main","box");
 	window.onscroll = function(){
 
@@ -25,7 +40,7 @@ window.onload = function(){
 
 				var boxWidth = boxs[0].offsetWidth;
 				var minH = Math.min.apply(null,hArry);
-				var mincol = getCols(minH,hArry);
+				var mincol = getCols(minH,hArry); //这里考虑到兼容IE9，否则可以直接用 hArry.indexOf(minH); 来获取数组中最小元素的索引
 				obox.style.position = "absolute";
 				obox.style.top = minH + "px";
 				obox.style.left = mincol*boxWidth + "px";
