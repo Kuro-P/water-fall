@@ -10,6 +10,6 @@
   * 大盒子中的所有小盒子是依据父盒子进行定位的
 
 ## 预览
-预览地址：https://kuro-p.github.io/Water-fall/main.html
+预览地址：https://kuro-p.github.io/water-fall/index.html
 
 ![image](https://github.com/Kuro-P/Water-fall/blob/master/images/%E6%95%88%E6%9E%9C%E5%9B%BE.jpg "效果截图")
