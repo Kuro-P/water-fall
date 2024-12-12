@@ -12,4 +12,4 @@
 ## 预览
 预览地址：https://kuro-p.github.io/water-fall/index.html
 
-![image](https://github.com/Kuro-P/Water-fall/blob/master/images/%E6%95%88%E6%9E%9C%E5%9B%BE.jpg "效果截图")
+![image](https://github.com/Kuro-P/Water-fall/blob/master/imgs/preview.jpg "效果截图")
