@@ -32,7 +32,7 @@ window.onload = function(){
 				var opic = document.createElement("div");
 				opic.className = "pic";
 				var oimg = document.createElement("img");
-				oimg.src = "images/"+i+".jpg";
+				oimg.src = "imgs/"+i+".jpg";
 				opic.appendChild(oimg);
 				obox.appendChild(opic);
 				boxssParent.appendChild(obox);

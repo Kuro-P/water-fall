@@ -30,7 +30,7 @@ $(window).on("load",function(){
 			$.each(data,function(key,item){
 				var box = $("<div>").addClass("box").appendTo($("#main"));
 				var pic = $("<div>").addClass("pic").appendTo(box);
-				var img = $("<img>").attr("src","images/"+item.src).appendTo(pic);
+				var img = $("<img>").attr("src","imgs/"+item.src).appendTo(pic);
 				
 				var minH = Math.min.apply(null,hArry);
 				var minHIndex = $.inArray(minH,hArry);
